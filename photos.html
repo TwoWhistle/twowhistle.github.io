@@ -2,60 +2,68 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Photos</title>
-  <!-- Link to your main stylesheet if you have one -->
-  <link rel="stylesheet" href="css/styles.css">
+  <title>Photos - Masonry Style</title>
   <style>
-    /* Quick inline styling for a simple grid */
     body {
       font-family: sans-serif;
-      margin: 10;
-      padding: 10;
+      margin: 10px;
+      padding: 10px;
       background-color: #FFFFE4;
     }
     h1 {
       text-align: center;
       margin: 1rem 0;
     }
+
+    /* 
+      1) .gallery: Use multi-column layout
+      2) Adjust column-count and column-gap as desired
+    */
     .gallery {
-      display: grid;
-      grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-      gap: 10px;
+      column-count: 3;       /* number of columns */
+      column-gap: 10px;      /* gap between columns */
       max-width: 1200px;
       margin: 0 auto;
-      padding: 0 10px 10px;
     }
+
+    /* Make images fill the column’s width and space them vertically */
     .gallery img {
       width: 100%;
       display: block;
-      object-fit: cover;
-      border-radius: 4px;
+      margin: 0 0 10px;
+      border-radius: 4px;    /* optional rounding of corners */
+    }
+
+    /* Optional: Adjust columns for responsiveness with media queries */
+    @media (max-width: 800px) {
+      .gallery {
+        column-count: 2;
+      }
+    }
+
+    @media (max-width: 500px) {
+      .gallery {
+        column-count: 1;
+      }
     }
   </style>
 </head>
 <body>
-  <p style="font-family:verdana">
-    im too cool for vsco
-  </p>
+
+  <h1>VSCO-ish Collage</h1>
+  <p>im too cool for vsco</p>
 
   <div class="gallery">
-    <!-- Replace these placeholder images with your actual photos -->
-    
-    <img src="images/IMG_3580.jpg" alt="Photo 9" />
-    <img src="images/IMG_0915.jpg" alt="Photo 8" />
-    <img src="images/IMG_0931.jpg" alt="Photo 7" />
-    <img src="images/IMG_1263.jpg" alt="Photo 6" />
-    <img src="images/IMG_1656.jpg" alt="Photo 5" />
-    <img src="images/IMG_9965.jpg" alt="Photo 3" />
-    <img src="images/IMG_9735.jpg" alt="Photo 1" />
-    <img src="images/IMG_9125.JPG" alt="Photo 2" />
-    <img src="images/RenderedImage.JPEG" alt="Photo 9" />
-    <img src="images/IMG_7875.jpg" alt="Photo 4" />
-    
-    
-    
-    
-
+    <img src="images/IMG_3580.jpg" alt="Photo 9">
+    <img src="images/IMG_0915.jpg" alt="Photo 8">
+    <img src="images/IMG_0931.jpg" alt="Photo 7">
+    <img src="images/IMG_1263.jpg" alt="Photo 6">
+    <img src="images/IMG_1656.jpg" alt="Photo 5">
+    <img src="images/IMG_9965.jpg" alt="Photo 3">
+    <img src="images/IMG_9735.jpg" alt="Photo 1">
+    <img src="images/IMG_9125.JPG" alt="Photo 2">
+    <img src="images/RenderedImage.JPEG" alt="Photo 9">
+    <img src="images/IMG_7875.jpg" alt="Photo 4">
   </div>
 
 </body>
