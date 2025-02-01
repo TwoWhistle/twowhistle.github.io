@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Photos</title>
+  <!-- Link to your main stylesheet if you have one -->
+  <link rel="stylesheet" href="css/styles.css">
+  <style>
+    /* Quick inline styling for a simple grid */
+    body {
+      font-family: sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+    h1 {
+      text-align: center;
+      margin: 1rem 0;
+    }
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+      gap: 10px;
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0 10px 10px;
+    }
+    .gallery img {
+      width: 100%;
+      display: block;
+      object-fit: cover;
+      border-radius: 4px;
+    }
+  </style>
+</head>
+<body>
+  <h1>My Photo Gallery</h1>
+
+  <div class="gallery">
+    <!-- Replace these placeholder images with your actual photos -->
+    <img src="https://placekitten.com/300/300" alt="Photo 1" />
+    <img src="https://placekitten.com/310/300" alt="Photo 2" />
+    <img src="https://placekitten.com/320/300" alt="Photo 3" />
+    <img src="https://placekitten.com/330/300" alt="Photo 4" />
+    <img src="https://placekitten.com/340/300" alt="Photo 5" />
+  </div>
+
+</body>
+</html>
