@@ -15,26 +15,24 @@
       margin: 1rem 0;
     }
 
-    /* 
-      1) .gallery: Use multi-column layout
-      2) Adjust column-count and column-gap as desired
-    */
     .gallery {
-      column-count: 3;       /* number of columns */
-      column-gap: 10px;      /* gap between columns */
+      column-count: 3;
+      column-gap: 10px;
       max-width: 1200px;
       margin: 0 auto;
     }
 
-    /* Make images fill the column’s width and space them vertically */
+    .gallery a {
+      display: block;
+      margin-bottom: 10px;
+    }
+
     .gallery img {
       width: 100%;
       display: block;
-      margin: 0 0 10px;
-      border-radius: 4px;    /* optional rounding of corners */
+      border-radius: 4px;
     }
 
-    /* Optional: Adjust columns for responsiveness with media queries */
     @media (max-width: 800px) {
       .gallery {
         column-count: 2;
@@ -49,22 +47,20 @@
   </style>
 </head>
 <body>
-
   <p style="font-family:verdana">im too cool for vsco</p>
-
+  
   <div class="gallery">
-    <img src="images/IMG_3580.jpg" alt="drinking problem">
-    <img src="images/IMG_0915.jpg" alt="tripped (but didn't fall) here">
-    <img src="images/IMG_0931.jpg" alt="dragon's load">
-    <img src="images/IMG_7121_VSCO.jpg" alt="sunset 2">
-    <img src="images/IMG_1656.jpg" alt="spooky">
-    <img src="images/IMG_9965.jpg" alt="sunset 1">
-    <img src="images/IMG_2151.jpg" alt="eddy and alex">
-    <img src="images/IMG_0161.JPG" alt="forever steppin">
-    <img src="images/IMG_9125.JPG" alt="eversinceiwasaijt">
-    <img src="images/RenderedImage.JPEG" alt="it's giving boy">
-    <img src="images/IMG_7875.jpg" alt="ditty too litty">
+    <a href="image_page.html?src=images/IMG_3580.jpg&alt=drinking problem"><img src="images/IMG_3580.jpg" alt="drinking problem"></a>
+    <a href="image_page.html?src=images/IMG_0915.jpg&alt=tripped (but didn't fall) here"><img src="images/IMG_0915.jpg" alt="tripped (but didn't fall) here"></a>
+    <a href="image_page.html?src=images/IMG_0931.jpg&alt=dragon's load"><img src="images/IMG_0931.jpg" alt="dragon's load"></a>
+    <a href="image_page.html?src=images/IMG_7121_VSCO.jpg&alt=sunset 2"><img src="images/IMG_7121_VSCO.jpg" alt="sunset 2"></a>
+    <a href="image_page.html?src=images/IMG_1656.jpg&alt=spooky"><img src="images/IMG_1656.jpg" alt="spooky"></a>
+    <a href="image_page.html?src=images/IMG_9965.jpg&alt=sunset 1"><img src="images/IMG_9965.jpg" alt="sunset 1"></a>
+    <a href="image_page.html?src=images/IMG_2151.jpg&alt=eddy and alex"><img src="images/IMG_2151.jpg" alt="eddy and alex"></a>
+    <a href="image_page.html?src=images/IMG_0161.JPG&alt=forever steppin"><img src="images/IMG_0161.JPG" alt="forever steppin"></a>
+    <a href="image_page.html?src=images/IMG_9125.JPG&alt=eversinceiwasaijt"><img src="images/IMG_9125.JPG" alt="eversinceiwasaijt"></a>
+    <a href="image_page.html?src=images/RenderedImage.JPEG&alt=it's giving boy"><img src="images/RenderedImage.JPEG" alt="it's giving boy"></a>
+    <a href="image_page.html?src=images/IMG_7875.jpg&alt=ditty too litty"><img src="images/IMG_7875.jpg" alt="ditty too litty"></a>
   </div>
-
 </body>
 </html>
