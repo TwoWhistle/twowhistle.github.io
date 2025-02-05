@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Image Viewer</title>
+  <style>
+    body {
+      font-family: sans-serif;
+      margin: 10px;
+      padding: 10px;
+      background-color: #FFFFE4;
+      text-align: center;
+    }
+
+    .image-container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: flex-start;
+      height: 100vh;
+    }
+
+    .image-container img {
+      max-width: 80%;
+      max-height: 33vh;
+      border-radius: 4px;
+    }
+
+    .caption {
+      margin-top: 10px;
+      font-size: 1.2rem;
+      color: #333;
+    }
+  </style>
+  <script>
+    window.onload = function() {
+      const params = new URLSearchParams(window.location.search);
+      const imgSrc = params.get('src');
+      const imgAlt = params.get('alt');
+
+      if (imgSrc) {
+        document.getElementById('image').src = imgSrc;
+      }
+      if (imgAlt) {
+        document.getElementById('caption').innerText = imgAlt;
+      }
+    };
+  </script>
+</head>
+<body>
+  <div class="image-container">
+    <img id="image" src="" alt="">
+    <p id="caption" class="caption"></p>
+  </div>
+</body>
+</html>
