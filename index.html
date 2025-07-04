@@ -1,88 +1,76 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>hey</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Ryan Yue</title>
   <style>
-    /* This sets all paragraphs to be at most 50% wide */
-    p {
-      max-width: 50%;
-      /* You could also include a margin if you want it centered */
-      text-align: left;
-    }
     body {
-      font-family: sans-serif;
-      margin: 10;
-      padding: 10;
-      background-color: #FFFFE4;
+      margin: 0;
+      padding: 0;
+      background: #111;
+      color: #eee;
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      text-align: center;
+    }
+
+    .container {
+      max-width: 600px;
+      padding: 1rem;
+    }
+
+    h1 {
+      margin: 0;
+      font-size: 2.5rem;
+      font-weight: 600;
+    }
+
+    p.caption {
+      margin-top: 0.25rem;
+      margin-bottom: 1.5rem;
+      font-size: 1.1rem;
+      color: #aaa;
+    }
+
+    ul {
+      list-style-type: disc;
+      padding-left: 1.2em;
+      text-align: left;
+      margin-bottom: 1.5rem;
+    }
+
+    .section-title {
+      margin-top: 1rem;
+      margin-bottom: 0.5rem;
+      font-weight: 500;
+      color: #ccc;
     }
   </style>
 </head>
 <body>
+  <div class="container">
+    <h1>Ryan Yue</h1>
+    <p class="caption">building lucid.</p>
 
-  <!-- Simple Nav Bar -->
-  <nav style="font-family:verdana">
-    <a href="essays.html">Essays</a> |
-    <a href="photos.html">Photos</a>
-    
-  </nav>
-  
-  <p style="font-family:verdana"><b>    </b></p>
+    <ul>
+      <li>neuro</li>
+      <li>robotics</li>
+      <li>had a pre med phase</li>
+      <li>mysterious</li>
+      <li>nonchalant</li>
+      <li>lowk chill af</li>
+    </ul>
 
-  <!--
-  <p style="font-family:verdana; margin-left: 50px;">
-    3/20/25 9:02pm The founder-influencer/influencer-founder is my modern day philosopher-king
-  </p>
-  <p style="font-family:verdana; margin-left: 50px;">
-    2/14/25 12:33pm  Update on my walking fast everywhere new years resolution - its going well. Think ive only been passed like 3 times. Some dumbass mf tried to pass me walking up a hill last night so I sped up, then he slowed down to let me get back in front, so I pulled the classic match his speed so we have to awkwardly walk next to each other. Went on for like a minute - he basically slowed to the point where we weren't walking anymore so I just passed him. Hopefully he doesn't try to pass me again
-  </p>
-  <p style="font-family:verdana; margin-left: 50px;">
-    2/10/25 3:57pm Jhu is supposed to be where the next generation of top tier doctors comes from. having been in classes with these mfs for a year, I'm confident that 50% of them will be replaced by ai before I die - ill make that shit happen ong. I'll literally turn your salary into the cost of a couple api calls. I look around in class thinking about which 50% will be spared and I feel like fucking thanos
-  </p>
-  <p style="font-family:verdana; margin-left: 50px;">
-    2/9/25 5:34pm To train a super minimal mvp, im self labeling my own eeg data, which I feel pretty good about, with regards to productivity, attention, sleep, distractedness, etc. But I am pretty genuinely concerned about getting usable labeled data for emotions, like I don't know if I am aware enough of my emotions to self report, even to train a super minimal mvp...hmmmm where I can find a source of hyper emotional data...I wonder how she'll take this lol
-  </p>
-  <p style="font-family:verdana; margin-left: 50px;">
-    2/4/25 9:47pm Like prediabetes, we'll start diagnosing people with prealzheimers, precancer, etc...I wonder if prediabetes came before cgms...either way cgms definitely led to an increase in diagnoses. 
-  </p>
-  <p style="font-family:verdana; margin-left: 50px;">
-    2/4/25 7:33pm Its already becoming somewhat clear that the next gen of wearable devices is implantable devices. Im unsure if I should keep fucking around with wearables or just go straight to implantables 
-  </p>
-  <p style="font-family:verdana; margin-left: 50px;">
-    2/3/25 5:37pm I always thought that life's mechanisms are in a constant fight against entropy, and that entropy eventually accumulates faster than an organism can export it. I always thought that this entropy accumulation was manifested in things like DNA mutations, but I realized the thermodynamic implications of the correct DNA sequence vs a point mutation are the same. 
-  </p>
-  <p style="font-family:verdana; margin-left: 50px;">
-    2/1/25 4:32pm The fact that the trendy healthy diet went from being vegan to being a carnivore is so funny. Something something the rise of male influencers
-  </p>
-  <p style="font-family:verdana; margin-left: 50px;">
-    1/23/25 11:27pm the fratty degenerate -> autistic psychedelic biohacker -> doctor has gotta be one of the more prolific college arcs I've witnessed. This isn't SZ glaze. 
-  </p>
-  <p style="font-family:verdana; margin-left: 50px;">
-    1/2/25 10:07am im walking fast everywhere in 2025
-  </p>
-  <p style="font-family:verdana; margin-left: 50px;">
-    11/20/24 12:525pm The farthest future I can think of right now for diagnostics is continuous in vivo RNAseq for every cell in your body. I've only thought about it for a couple minutes, but I don't think it gets more advanced than that. Maybe there's something more advanced you can do with the DNA itself, but I think RNAseq is more effective because it includes expression. Obvisouly you can continue to innovate on the ways you analyze this data, and you can also continue innovating on RNAseq until maybe it isn't called RNA seq anymore, but the technology would sitll be based around the exposome.
-  </p>
-  <p style="font-family:verdana; margin-left: 50px;">
-    9/20/24 2:00pm The fda can't approave a drug for general longevity because there isn't yet a widely accepted metric for longevity (like Hba1c or body weight for diabetes). But this implies there's a mechanism behind actually extending life, as opposed to delaying the onset of disease->death 
-  </p>
-  <p style="font-family:verdana; margin-left: 50px;">
-    9/14/25 6:19pm Winston Churchill said it's unnecesary to grow a whole animal just to eat a couple parts of it, and cellular agriculture supporters have made it their mantra. But the better solution, and the way nature has always done it, is to grow the meat in the real organism and eat the entirety of the organism instead of just eating a couple parts of it. 
-  </p>
-  <p style="font-family:verdana; margin-left: 50px;">
-    9/1/24 4:33pm post white party. is there anything better than drunk carbs
-  </p>
-  <p style="font-family:verdana; margin-left: 50px;">
-    8/28/24 10:28pm I was thinking about this phenomenon that for every semi-big groupchat there’s a bunch of smaller group chats with ~20% of the people in the big one and they control the background and once they reach a conclusion it gets published to the big groupchat. Anyways, how big does that first big groupchat have to be to have the break off ones - I’m guessing n=5. But it’s likely some function where as n increases, the probability/average number of breakoff groups increases exponentially, and then flattens out?
-  </p>
-  <p style="font-family:verdana; margin-left: 50px;">
-    8/26/24 9:53pm Everyone my age has a thing. The thing you spend 10-20 hours a week on that isn't directly school/career related. Some common ones are going to the gym, being in a frat, dating your girlf, building something. This is what defines people. If you want to know who someone really is, figure out what their thing is. It also makes sense that the biggest differences between people are minimally affected by how well they do the school/career related stuff, but is mainly a result of differences between how they spend those 10-20 hours a week. And if you're really obsessed, you'll spend more than 10-20 hours a week, and differences will become even more drastic. 
-  </p>
-  <p style="font-family:verdana; margin-left: 50px;">
-    8/22/24 11:13am not doing this basic ass hello world bs. 
-  </p>
-
-  -->
-  
+    <div class="section-title">Hobbies:</div>
+    <ul>
+      <li>building</li>
+      <li>counting kcals</li>
+      <li>vibe coding</li>
+    </ul>
+  </div>
 </body>
 </html>
