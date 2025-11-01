@@ -1,5 +1,5 @@
 /* ============================
-   Researcher's Notebook Theme
+   Researcher's Notebook Theme (No Lines)
    ============================ */
 
 /* ---- Palette ---- */
@@ -9,7 +9,7 @@
   --text: #2b2b2b;     /* ink */
   --muted: #6a6a6a;    /* pencil */
   --accent: #2a5b8d;   /* fountain-pen blue */
-  --line: #e3dfd6;     /* paper ruling */
+  --line: #e3dfd6;     /* paper border tone */
   --shadow: rgba(0,0,0,0.045);
 }
 
@@ -34,10 +34,7 @@ body {
   /* serif stack for a journal/monograph feel */
   font-family: "Iowan Old Style", "Palatino Linotype", Palatino, "Charter", Georgia, "Times New Roman", Times, serif;
   color: var(--text);
-  background:
-    /* subtle horizontal ruling (lined paper effect) */
-    linear-gradient(to bottom, var(--line) 1px, transparent 1px) 0 0 / 100% 28px,
-    var(--bg);
+  background: var(--bg);
   line-height: 1.65;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -45,11 +42,15 @@ body {
 
 /* ---- Header / Nav ---- */
 header {
-  position: sticky; top: 0; z-index: 50;
+  position: sticky;
+  top: 0;
+  z-index: 50;
   background: var(--card);
   border-bottom: 1px solid var(--line);
   padding: 0.85rem 1.25rem;
-  display: flex; align-items: center; justify-content: space-between;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
   box-shadow: 0 6px 16px var(--shadow);
 }
 
@@ -69,12 +70,19 @@ nav a {
   font-size: 0.95rem;
   padding: 0.2rem 0;
   border-bottom: 2px solid transparent;
-  transition: color .15s ease, border-color .15s ease;
+  transition: color 0.15s ease, border-color 0.15s ease;
   letter-spacing: 0.15px;
 }
 
-nav a:hover { color: var(--accent); border-bottom-color: var(--line); }
-nav a[aria-current="page"] { color: var(--accent); border-bottom-color: var(--accent); }
+nav a:hover {
+  color: var(--accent);
+  border-bottom-color: var(--line);
+}
+
+nav a[aria-current="page"] {
+  color: var(--accent);
+  border-bottom-color: var(--accent);
+}
 
 /* ---- Layout ---- */
 main {
@@ -84,7 +92,9 @@ main {
 }
 
 /* Hero matches notebook tone */
-.hero { text-align: left; }
+.hero {
+  text-align: left;
+}
 
 h1, h2, h3 {
   font-weight: 700;
@@ -92,8 +102,14 @@ h1, h2, h3 {
   margin: 0 0 0.35rem 0;
 }
 
-h1 { font-size: clamp(2rem, 3.2vw, 2.7rem); }
-h2 { font-size: clamp(1.35rem, 2.3vw, 1.7rem); margin-top: 1.2rem; }
+h1 {
+  font-size: clamp(2rem, 3.2vw, 2.7rem);
+}
+
+h2 {
+  font-size: clamp(1.35rem, 2.3vw, 1.7rem);
+  margin-top: 1.2rem;
+}
 
 /* Underline rule beneath top heading (like a notebook title) */
 .hero h1::after {
@@ -106,7 +122,10 @@ h2 { font-size: clamp(1.35rem, 2.3vw, 1.7rem); margin-top: 1.2rem; }
   border-radius: 2px;
 }
 
-p { margin: 0.5rem 0; color: var(--muted); }
+p {
+  margin: 0.5rem 0;
+  color: var(--muted);
+}
 
 /* ---- Entry Lists (Thoughts/Projects) ---- */
 ul {
@@ -116,9 +135,7 @@ ul {
 }
 
 ul li {
-  background:
-    linear-gradient(to bottom, var(--line) 1px, transparent 1px) 0 0 / 100% 28px,
-    var(--card);
+  background: var(--card);
   border: 1px solid var(--line);
   border-left: 3px solid var(--accent);
   border-radius: 14px;
@@ -133,8 +150,13 @@ ul li strong {
 }
 
 /* ---- Links in body ---- */
-a { color: var(--accent); }
-a:hover { text-decoration: underline; }
+a {
+  color: var(--accent);
+}
+
+a:hover {
+  text-decoration: underline;
+}
 
 /* ---- Footer ---- */
 footer {
@@ -165,8 +187,14 @@ code, pre {
   border-radius: 10px;
 }
 
-code { padding: 0.15rem 0.35rem; }
-pre  { padding: 0.8rem 1rem; overflow: auto; }
+code {
+  padding: 0.15rem 0.35rem;
+}
+
+pre {
+  padding: 0.8rem 1rem;
+  overflow: auto;
+}
 
 /* ---- Print-friendly ---- */
 @media print {
