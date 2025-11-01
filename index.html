@@ -2,77 +2,83 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Ryan Yue</title>
   <style>
     body {
+      font-family: 'Helvetica Neue', Arial, sans-serif;
       margin: 0;
-      padding: 0;
-      background: #fff;
-      color: #000;
-      font-family: "Times New Roman", Times, serif;
+      background-color: #f9fafb;
+      color: #222;
+    }
+
+    header {
+      background-color: #ffffff;
+      border-bottom: 1px solid #e5e7eb;
+      padding: 1rem 2rem;
       display: flex;
-      justify-content: center;
+      justify-content: space-between;
       align-items: center;
-      height: 100vh;
+      position: sticky;
+      top: 0;
+    }
+
+    nav a {
+      margin-left: 1.5rem;
+      text-decoration: none;
+      color: #333;
+      font-weight: 500;
+      transition: color 0.2s;
+    }
+
+    nav a:hover {
+      color: #0070f3;
+    }
+
+    main {
+      max-width: 800px;
+      margin: 5rem auto;
+      padding: 0 1rem;
       text-align: center;
     }
 
-    .container {
-      max-width: 600px;
-      padding: 1rem;
-    }
-
     h1 {
-      margin: 0;
       font-size: 2.5rem;
-      font-weight: normal;
-    }
-
-    p.caption {
-      margin-top: 0.25rem;
-      margin-bottom: 1.5rem;
-      font-size: 1.1rem;
-      font-style: italic;
-    }
-
-    ul {
-      list-style-type: disc;
-      padding-left: 1.2em;
-      text-align: left;
-      margin-bottom: 1.5rem;
-    }
-
-    .section-title {
-      margin-top: 1rem;
       margin-bottom: 0.5rem;
-      font-weight: bold;
+    }
+
+    p {
+      color: #555;
+      line-height: 1.6;
+    }
+
+    footer {
+      margin-top: 4rem;
+      text-align: center;
+      font-size: 0.9rem;
+      color: #888;
+      padding-bottom: 2rem;
     }
   </style>
 </head>
 <body>
-  <div class="container">
-    <h1>Ryan Yue</h1>
-    <p class="caption">building lucid</p>
+  <header>
+    <div><strong>Ryan Yue</strong></div>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="thoughts.html">Thoughts</a>
+      <a href="projects.html">Projects</a>
+    </nav>
+  </header>
 
-<!--
-  
-    <ul>
-      <li>neuro</li>
-      <li>robotics</li>
-      <li>had a pre med phase</li>
-      <li>mysterious</li>
-      <li>nonchalant</li>
-    </ul>
+  <main>
+    <h1>Welcome.</h1>
+    <p>I'm Ryan Yue — exploring neuroscience, technology, and the future of human performance.</p>
+    <p>This site collects my current projects and evolving thoughts.</p>
+  </main>
 
-    <div class="section-title">Hobbies:</div>
-    <ul>
-      <li>building</li>
-      <li>counting kcals</li>
-      <li>vibe coding</li>
-    </ul>
--->
-    
-  </div>
+  <footer>
+    © 2025 Ryan Yue
+  </footer>
 </body>
 </html>
